@@ -1,0 +1,65 @@
+# 🧩 Основні технології
+
+<table width="100%">
+<tr>
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+### 🎨 Frontend
+
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts&theme=dark" height="55">
+
+</div>
+
+<br>
+
+**Next.js 16.2.12**  
+<sub>Основний frontend-фреймворк.</sub>
+
+<br><br>
+
+**React 19.2.4**  
+<sub>Бібліотека для побудови користувацького інтерфейсу.</sub>
+
+<br><br>
+
+**TypeScript 5.x**  
+<sub>Основна мова frontend-частини.</sub>
+
+<br>
+
+</td>
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+### ⚙️ Backend
+
+<img src="https://skillicons.dev/icons?i=dotnet&theme=dark" height="55">
+
+</div>
+
+<br>
+
+**ASP.NET Core · .NET 10**  
+<sub>Backend API та основна платформа виконання.</sub>
+
+<br><br>
+
+**Entity Framework Core 10**  
+<sub>ORM, моделі бази даних та міграції.</sub>
+
+<br><br>
+
+**Npgsql 10.0.3**  
+<sub>PostgreSQL-провайдер для Entity Framework Core.</sub>
+
+<br>
+
+</td>
+
+</tr>
+</table>
