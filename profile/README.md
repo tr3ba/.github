@@ -8,7 +8,7 @@ Full-stack diploma marketplace built with **ASP.NET Core, Next.js, PostgreSQL an
 
 <br>
 
-[Live Demo](http://52.29.147.28/) ·
+[Live Demo](http://52.209.28.30/) ·
 [Backend](https://github.com/tr3ba/treba-backend) ·
 [Frontend](https://github.com/tr3ba/treba-frontend)
 
