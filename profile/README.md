@@ -15,7 +15,7 @@ A modern marketplace platform built with a strong focus on
 
 <br>
 
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](http://52.209.28.30/)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://treba.duckdns.org)
 [![Backend](https://img.shields.io/badge/BACKEND-FF6E2A?style=for-the-badge&logo=dotnet&logoColor=white)](https://github.com/tr3ba/treba-backend)
 [![Frontend](https://img.shields.io/badge/FRONTEND-002AFF?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://github.com/tr3ba/treba-frontend)
 
