@@ -1,7 +1,7 @@
 <div align="center">
 
-[🇬🇧 English](https://github.com/tr3ba/.github/blob/main/profile/README.md) ·
-[🇺🇦 Українська](https://github.com/tr3ba/.github/blob/main/profile/README.uk.md) ·
+[🇬🇧 English](./profile/README.md) ·
+[🇺🇦 Українська](./README.uk.md) ·
 **🇷🇺 Русский**
 
 <br><br>
@@ -568,6 +568,7 @@ Backend `/health` подтвердил соединение с базой.
 - после hardening проверен доступ backend к RDS
 - проверены фактические EC2 listeners
 - доступ к базе сужен после временной диагностики
+- публичный сайт доступен по HTTPS: `https://treba.duckdns.org`
 
 </td>
 
@@ -603,7 +604,6 @@ Backend `/health` подтвердил соединение с базой.
 
 ### 🚧 Открытые задачи hardening
 
-- HTTPS / TLS
 - публичный backend port `5000`
 - GitHub Actions → AWS OIDC
 - immutable deployment по digest / SHA
@@ -702,7 +702,7 @@ refresh/logout и поддержку двухфакторной аутентиф
 
 <br>
 
-[![Open Treba](https://img.shields.io/badge/OPEN_TREBA-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](http://52.209.28.30/)
+[![Open Treba](https://img.shields.io/badge/OPEN_TREBA-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://treba.duckdns.org)
 
 <br><br>
 
