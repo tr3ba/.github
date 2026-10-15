@@ -1,8 +1,8 @@
 <div align="center">
 
 **🇬🇧 English** ·
-🇺🇦 Українська *(coming soon)* ·
-🇷🇺 Русский *(coming soon)*
+[🇺🇦 Українська](../README.uk.md) ·
+[🇷🇺 Русский](../README.ru.md)
 
 <br><br>
 
@@ -24,7 +24,7 @@ A modern marketplace platform built with a strong focus on
 ![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js_16.2.12-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19.2.4-61DAFB?style=flat-square&logo=react&logoColor=000000)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript_5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -88,7 +88,7 @@ monitoring, database recovery, access control and security hardening.
 
 <br><br>
 
-**TypeScript 5**  
+**TypeScript 5.x**  
 <sub>Typed frontend development and application logic.</sub>
 
 <br>
@@ -565,6 +565,7 @@ Backend `/health` confirmed database connectivity.
 - RDS connectivity verified after hardening
 - Actual EC2 listeners inspected
 - Database access narrowed from temporary diagnostic exposure
+- Public site available over HTTPS: `https://treba.duckdns.org`
 
 </td>
 
@@ -600,7 +601,6 @@ Backend `/health` confirmed database connectivity.
 
 ### 🚧 Open Hardening Tasks
 
-- HTTPS / TLS
 - Public backend port `5000`
 - GitHub Actions → AWS OIDC
 - Immutable deployment by digest / SHA
@@ -699,7 +699,7 @@ is still being developed.
 
 <br>
 
-[![Open Treba](https://img.shields.io/badge/OPEN_TREBA-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](http://52.209.28.30/)
+[![Open Treba](https://img.shields.io/badge/OPEN_TREBA-002AFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://treba.duckdns.org)
 
 <br><br>
 
