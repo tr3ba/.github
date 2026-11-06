@@ -1,10 +1,10 @@
 <div align="center">
 
-[🇺🇦 Українська](profile/README.md) · **🇬🇧 English**
+[Українська](profile/README.md) · **English**
 
 <br>
 
-# 🛒 Treba Marketplace
+# Treba Marketplace
 
 ### Marketplace · Cloud infrastructure · DevOps
 
@@ -35,8 +35,8 @@ A team marketplace with a product catalog, cart, orders, and dedicated spaces fo
 
 | | |
 |---|---|
-| **🕓 [Project history](docs/history/project-history.en.md)**<br>How Treba grew from its first repositories to a marketplace. | **👥 [Team](docs/team/README.en.md)**<br>Who worked on the interface, API, and delivery. |
-| **🏗️ [Architecture](docs/architecture.en.md)**<br>How the web app, API, database, and deployment fit together. | **🛠️ [Issues and fixes](docs/incidents/README.en.md)**<br>Deployment problems, CI failures, and the changes that addressed them. |
+| **[Project history](docs/history/project-history.en.md)**<br>How Treba grew from its first repositories to a marketplace. | **[Team](docs/team/README.en.md)**<br>Who worked on the interface, API, and delivery. |
+| **[Architecture](docs/architecture.en.md)**<br>How the web app, API, database, and deployment fit together. | **[Issues and fixes](docs/incidents/README.en.md)**<br>Deployment problems, CI failures, and the changes that addressed them. |
 
 ## About Treba
 
@@ -57,10 +57,10 @@ The frontend is built with Next.js, React, and TypeScript. The backend is an ASP
 
 The [history](docs/history/project-history.en.md) gives the sequence behind these features. The [development log](docs/history/daily-log.en.md) is a shorter day-by-day view.
 
-## 🧩 Core technologies
+## Core technologies
 
 <table width="100%">
-<tr><th width="50%">🎨 Frontend</th><th width="50%">⚙️ Backend</th></tr>
+<tr><th width="50%">Frontend</th><th width="50%">Backend</th></tr>
 <tr>
 <td width="50%" align="center" valign="top"><br><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="64" height="64" alt="Next.js"><br><strong>Next.js</strong> <code>16.2.12</code><p>Pages, routing, and server-side features.</p></td>
 <td width="50%" align="center" valign="top"><br><img src="https://skillicons.dev/icons?i=dotnet&theme=dark" width="64" height="64" alt="ASP.NET Core"><br><strong>ASP.NET Core</strong> <code>.NET 10</code><p>The API for catalog, accounts, and orders.</p></td>
@@ -75,7 +75,7 @@ The [history](docs/history/project-history.en.md) gives the sequence behind thes
 </tr>
 </table>
 
-## 🗄️ Data layer
+## Data layer
 
 <table width="100%">
 <tr>
@@ -84,10 +84,10 @@ The [history](docs/history/project-history.en.md) gives the sequence behind thes
 </tr>
 </table>
 
-## ☁️ AWS and DevOps
+## AWS and DevOps
 
 <table width="100%">
-<tr><th width="50%">🚀 Delivery and runtime</th><th width="50%">🛡️ Operations and infrastructure</th></tr>
+<tr><th width="50%">Delivery and runtime</th><th width="50%">Operations and infrastructure</th></tr>
 <tr>
 <td width="50%" align="center" valign="top"><br><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="64" height="64" alt="Docker"><br><strong>Docker</strong><p>Containers for backend and frontend.</p></td>
 <td width="50%" align="center" valign="top"><br><img src="https://awsfundamentals.com/assets/aws-icons/Arch_AWS-Systems-Manager_64.svg" width="64" height="64" alt="AWS Systems Manager"><br><strong>Systems Manager</strong><p>Remote deployment commands.</p></td>
@@ -106,7 +106,7 @@ The [history](docs/history/project-history.en.md) gives the sequence behind thes
 </tr>
 </table>
 
-## 🏗️ System architecture
+## System architecture
 
 ~~~mermaid
 flowchart LR
@@ -120,7 +120,7 @@ flowchart LR
 
 Catalog pages read from the API. Authenticated cart and order flows use the backend; a guest cart stays in the browser until sign-in. The administrative interface runs in the frontend, while its operations are served by the API. [Read the architecture page](docs/architecture.en.md).
 
-## 🚀 Delivery pipeline
+## Delivery pipeline
 
 ~~~mermaid
 flowchart LR
@@ -132,7 +132,7 @@ flowchart LR
 
 Backend and frontend have separate workflows. Their deployment scripts use image tags derived from commits, check the new container, and keep the previous container available for rollback. Examples: [backend deployment](https://github.com/tr3ba/treba-backend/actions/runs/41083558386) and [frontend deployment](https://github.com/tr3ba/treba-frontend/actions/runs/41191308177).
 
-## 🕓 Development history
+## Development history
 
 From the first assignment in July to buyer order cancellation in November, these are the main steps. Choose a month for its PRs and context in the [full project history](docs/history/project-history.en.md).
 
@@ -144,11 +144,11 @@ From the first assignment in July to buyer order cancellation in November, these
 
 [Full history](docs/history/project-history.en.md) · [Development log](docs/history/daily-log.en.md)
 
-## 🛠️ Issues and fixes
+## Issues and fixes
 
 The team worked through deployment and integration problems along the way: an EC2 disk filled with retained images, database migration checks that blocked deployment, OAuth table naming, and an admin page hidden by browser filters. The [issues and fixes page](docs/incidents/README.en.md) links each case to the relevant PR. It also separates deliberate CI failure demonstrations from actual deployment problems.
 
-## 👥 Team
+## Team
 
 | Member | Main work | Example |
 |---|---|---|
@@ -160,7 +160,7 @@ The team worked through deployment and integration problems along the way: an EC
 
 [Meet the team](docs/team/README.en.md)
 
-## 📦 Repositories
+## Repositories
 
 [![Open Backend](https://img.shields.io/badge/OPEN_BACKEND-FF6E2A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tr3ba/treba-backend)
 [![Open Frontend](https://img.shields.io/badge/OPEN_FRONTEND-002AFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tr3ba/treba-frontend)
