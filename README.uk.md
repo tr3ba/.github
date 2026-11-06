@@ -1,10 +1,10 @@
 <div align="center">
 
-[🇬🇧 English](../README.en.md) · **🇺🇦 Українська**
+[English](../README.en.md) · **Українська**
 
 <br>
 
-# 🛒 Treba Marketplace
+# Treba Marketplace
 
 ### Маркетплейс · Хмарна інфраструктура · DevOps
 
@@ -35,7 +35,7 @@ Frontend, backend API і доставку змін команда розвива
 <a id="treba-navigation"></a>
 
 <details>
-<summary><strong>🗺️ Навігація</strong></summary>
+<summary><strong>Навігація</strong></summary>
 
 <table width="100%">
 <tr>
@@ -75,7 +75,7 @@ Frontend, backend API і доставку змін команда розвива
 <tr>
 <td width="50%" valign="top">
 
-### 🕓 Історія
+### Історія
 
 Від першого завдання 18 липня до розвитку маркетплейсу. Етапи, дати й головні зміни.
 
@@ -84,7 +84,7 @@ Frontend, backend API і доставку змін команда розвива
 </td>
 <td width="50%" valign="top">
 
-### 👥 Команда
+### Команда
 
 Хто працював над TREBA, за які частини відповідав і які зміни залишив у проєкті.
 
@@ -95,7 +95,7 @@ Frontend, backend API і доставку змін команда розвива
 <tr>
 <td width="50%" valign="top">
 
-### 🛠️ Помилки та виправлення
+### Помилки та виправлення
 
 Історії про збої CI, розгортання та роботу застосунку: що сталося і як це виправили.
 
@@ -104,7 +104,7 @@ Frontend, backend API і доставку змін команда розвива
 </td>
 <td width="50%" valign="top">
 
-### 🏗️ Архітектура
+### Архітектура
 
 Як пов'язані frontend, backend API, база даних і доставка змін.
 
@@ -118,7 +118,7 @@ Frontend, backend API і доставку змін команда розвива
 
 <a id="treba-about"></a>
 
-## 👋 Про Treba
+## Про Treba
 
 **Treba**: командний маркетплейс із каталогом товарів, кошиком, замовленнями та просторами для покупця, продавця й адміністратора. Покупець бачить товари у вебінтерфейсі, а дані й основні операції надходять із backend API.
 
@@ -136,7 +136,7 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 
 <a id="treba-features"></a>
 
-## 🛍️ Що вже є в TREBA
+## Що вже є в TREBA
 
 Нижче зібрано основні функції TREBA. Посилання на PR показують, як вони з'являлися у проєкті.
 
@@ -158,10 +158,10 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 
 <a id="treba-tech"></a>
 
-## 🧩 Основні технології
+## Основні технології
 
 <table width="100%">
-<tr><th width="50%">🎨 Frontend</th><th width="50%">⚙️ Backend</th></tr>
+<tr><th width="50%">Frontend</th><th width="50%">Backend</th></tr>
 <tr>
 <td width="50%" align="center" valign="top">
 <br>
@@ -216,7 +216,7 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 
 <a id="treba-data"></a>
 
-## 🗄️ Рівень даних
+## Рівень даних
 
 <table width="100%">
 <tr>
@@ -241,12 +241,12 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 
 <a id="treba-devops"></a>
 
-## ☁️ AWS & DevOps
+## AWS & DevOps
 
 <table width="100%">
 <tr>
-<th width="50%">🚀 Доставка та Runtime</th>
-<th width="50%">🛡️ Операції та інфраструктура</th>
+<th width="50%">Доставка та Runtime</th>
+<th width="50%">Операції та інфраструктура</th>
 </tr>
 <tr>
 <td width="50%" align="center" valign="top">
@@ -318,12 +318,12 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 
 <a id="treba-architecture"></a>
 
-## 🏗️ Архітектура системи
+## Архітектура системи
 
 ```mermaid
 flowchart LR
 
-    USER["👤 Користувач"]
+    USER["Користувач"]
     FRONT["Next.js 16<br/>Frontend"]
     API["ASP.NET Core<br/>.NET 10 API"]
     DB["PostgreSQL<br/>Amazon RDS"]
@@ -350,7 +350,7 @@ Backend API та PostgreSQL-рівень реалізовані окремо в�
 
 <a id="treba-cicd"></a>
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 ```mermaid
 flowchart LR
@@ -392,13 +392,13 @@ flowchart LR
 створення Docker-образів, публікації в Amazon ECR та розгортання через AWS Systems Manager.
 
 <details>
-<summary><strong>⚙️ Деталі CI/CD: Backend та Frontend</strong></summary>
+<summary><strong>Деталі CI/CD: Backend та Frontend</strong></summary>
 
 <table width="100%">
 <tr>
 <td width="460" valign="top">
 
-### ⚙️ Backend
+### Backend
 
 - restore та build
 - автоматизовані тести
@@ -411,7 +411,7 @@ flowchart LR
 </td>
 <td width="460" valign="top">
 
-### 🎨 Frontend
+### Frontend
 
 - TypeScript check та Next.js build у Frontend Checks
 - Node.js тести та Python unittest у Frontend Checks
@@ -432,7 +432,7 @@ flowchart LR
 
 <a id="treba-roadmap"></a>
 
-## 🕓 Історія розвитку
+## Історія розвитку
 
 Від липневого каркаса до каталогу, покупок і кабінетів восени: тут зібрано головні етапи TREBA. Більше подій є в [історії проєкту](../docs/history/project-history.md) та [журналі розробки](../docs/history/daily-log.md).
 
@@ -448,7 +448,7 @@ flowchart LR
 
 
 <details>
-<summary><strong>📅 Події за днями</strong></summary>
+<summary><strong>Події за днями</strong></summary>
 
 <ul>
 <li><strong>18.07</strong>: студентів поділили на команди, дали завдання зробити клон інтернет-магазину Rozetka та надали дизайн сайту.</li>
@@ -468,7 +468,7 @@ flowchart LR
 
 
 <details>
-<summary><strong>📅 Події за днями</strong></summary>
+<summary><strong>Події за днями</strong></summary>
 
 <ul>
 <li><strong>03.08</strong>: <a href="https://github.com/tr3ba/treba-backend/pull/2">Відкрито PR адміністративної панелі</a>.</li>
@@ -496,7 +496,7 @@ flowchart LR
 
 
 <details>
-<summary><strong>📅 Події за днями</strong></summary>
+<summary><strong>Події за днями</strong></summary>
 
 <ul>
 <li><strong>01.09</strong>: <a href="https://github.com/tr3ba/treba-backend/pull/10">Перенесено доставку на новий AWS account</a>.</li>
@@ -521,7 +521,7 @@ flowchart LR
 
 
 <details>
-<summary><strong>📅 Події за днями</strong></summary>
+<summary><strong>Події за днями</strong></summary>
 
 <ul>
 <li><strong>02.10</strong>: <a href="https://github.com/tr3ba/treba-backend/pull/38">Додано продавців, магазини й backend-кошик</a>.</li>
@@ -564,7 +564,7 @@ flowchart LR
 <img src="../assets/history/november.svg" width="460" alt="ЛИСТОПАД 2026: Покупець може скасувати замовлення. Зміна інтерфейсу та підключення до API.">
 
 <details>
-<summary><strong>📅 Події за днями</strong></summary>
+<summary><strong>Події за днями</strong></summary>
 
 <ul>
 <li><strong>05.11</strong>: <a href="https://github.com/tr3ba/treba-frontend/pull/56">Додано скасування замовлення покупцем</a> у вебінтерфейсі.</li>
@@ -576,13 +576,13 @@ flowchart LR
 </tr>
 </table>
 
-[📖 Детальна історія](../docs/history/project-history.md) · [📅 Журнал за днями](../docs/history/daily-log.md) · [👥 Команда](../docs/team/README.md)
+[Детальна історія](../docs/history/project-history.md) · [Журнал за днями](../docs/history/daily-log.md) · [Команда](../docs/team/README.md)
 
 ---
 
 <a id="treba-incidents"></a>
 
-## 🛠️ Помилки та виправлення
+## Помилки та виправлення
 
 Три випадки з розробки: проблеми з місцем на сервері та міграціями бази даних. Повні розбори з посиланнями на зміни зібрано на окремій сторінці.
 
@@ -598,7 +598,7 @@ flowchart LR
 
 <a id="treba-team"></a>
 
-## 👥 Люди в історії проєкту
+## Люди в історії проєкту
 
 TREBA розвивала команда з різними напрямами роботи: від інтерфейсу магазину й API до доставки в AWS. Коротко про учасників нижче; більше про їхній внесок є на [сторінці команди](../docs/team/README.md).
 
@@ -660,7 +660,7 @@ API · адмінпростір · інтеграція<br>
 </td>
 <td width="50%" valign="top">
 
-### 📖 Усі автори змін
+### Усі автори змін
 
 [Переглянути внесок команди →](../docs/team/README.md)
 
@@ -671,7 +671,7 @@ API · адмінпростір · інтеграція<br>
 
 <a id="treba-repositories"></a>
 
-## 📦 Репозиторії Treba
+## Репозиторії Treba
 
 <table width="100%">
 <tr>
