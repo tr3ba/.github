@@ -1,6 +1,6 @@
 <div align="center">
 
-[🇬🇧 English](README.en.md) · **🇺🇦 Українська**
+[🇬🇧 English](../README.en.md) · **🇺🇦 Українська**
 
 <br>
 
@@ -79,7 +79,7 @@ Frontend, backend API і доставку змін команда розвива
 
 Від першого завдання 18 липня до розвитку маркетплейсу. Етапи, дати й головні зміни.
 
-[Відкрити історію →](docs/history/project-history.md) · [Журнал за днями →](docs/history/daily-log.md)
+[Відкрити історію →](../docs/history/project-history.md) · [Журнал за днями →](../docs/history/daily-log.md)
 
 </td>
 <td width="50%" valign="top">
@@ -88,7 +88,7 @@ Frontend, backend API і доставку змін команда розвива
 
 Хто працював над TREBA, за які частини відповідав і які зміни залишив у проєкті.
 
-[Переглянути команду →](docs/team/README.md)
+[Переглянути команду →](../docs/team/README.md)
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ Frontend, backend API і доставку змін команда розвива
 
 Історії про збої CI, розгортання та роботу застосунку: що сталося і як це виправили.
 
-[Читати розбори →](docs/incidents/README.md)
+[Читати розбори →](../docs/incidents/README.md)
 
 </td>
 <td width="50%" valign="top">
@@ -108,7 +108,7 @@ Frontend, backend API і доставку змін команда розвива
 
 Як пов'язані frontend, backend API, база даних і доставка змін.
 
-[Переглянути архітектуру →](docs/architecture.md)
+[Переглянути архітектуру →](../docs/architecture.md)
 
 </td>
 </tr>
@@ -151,7 +151,7 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 | Адміністрування | Адміністративний інтерфейс перенесено у Next.js `/admin` у [frontend #50](https://github.com/tr3ba/treba-frontend/pull/50); старий backend інтерфейс виведено у [backend #96](https://github.com/tr3ba/treba-backend/pull/96). |
 | Доставка змін | Build, Docker/ECR і EC2 workflows у [backend](https://github.com/tr3ba/treba-backend/tree/main/.github/workflows) та [frontend](https://github.com/tr3ba/treba-frontend/tree/main/.github/workflows); експерименти з Kubernetes у [backend #52](https://github.com/tr3ba/treba-backend/pull/52) і [#56](https://github.com/tr3ba/treba-backend/pull/56). |
 
-Як ці можливості з’являлися, показано в [історії проєкту](docs/history/project-history.md) та [журналі розробки](docs/history/daily-log.md).
+Як ці можливості з’являлися, показано в [історії проєкту](../docs/history/project-history.md) та [журналі розробки](../docs/history/daily-log.md).
 
 
 ---
@@ -434,7 +434,7 @@ flowchart LR
 
 ## 🕓 Історія розвитку
 
-Від липневого каркаса до каталогу, покупок і кабінетів восени: тут зібрано головні етапи TREBA. Більше подій є в [історії проєкту](docs/history/project-history.md) та [журналі розробки](docs/history/daily-log.md).
+Від липневого каркаса до каталогу, покупок і кабінетів восени: тут зібрано головні етапи TREBA. Більше подій є в [історії проєкту](../docs/history/project-history.md) та [журналі розробки](../docs/history/daily-log.md).
 
 Розгорніть потрібний місяць, щоб побачити події за днями. Дати наведено в UTC; відкриття PR і злиття позначені окремо.
 
@@ -444,7 +444,7 @@ flowchart LR
 
 <a id="month-july"></a>
 
-<img src="assets/history/july.svg" width="460" alt="ЛИПЕНЬ 2026: Основа проєкту. Створення backend і frontend, архітектурний каркас та доменні сутності.">
+<img src="../assets/history/july.svg" width="460" alt="ЛИПЕНЬ 2026: Основа проєкту. Створення backend і frontend, архітектурний каркас та доменні сутності.">
 
 
 <details>
@@ -464,7 +464,7 @@ flowchart LR
 
 <a id="month-august"></a>
 
-<img src="assets/history/august.svg" width="460" alt="СЕРПЕНЬ 2026: Контейнери та доставка. Користувачі, база даних, адмінпанель, Docker і перша доставка через ECR / EC2.">
+<img src="../assets/history/august.svg" width="460" alt="СЕРПЕНЬ 2026: Контейнери та доставка. Користувачі, база даних, адмінпанель, Docker і перша доставка через ECR / EC2.">
 
 
 <details>
@@ -492,7 +492,7 @@ flowchart LR
 
 <a id="month-september"></a>
 
-<img src="assets/history/september.svg" width="460" alt="ВЕРЕСЕНЬ 2026: Каталог, CI та доступ. API каталогу, тести й перевірки, авторизація та оновлення доставки.">
+<img src="../assets/history/september.svg" width="460" alt="ВЕРЕСЕНЬ 2026: Каталог, CI та доступ. API каталогу, тести й перевірки, авторизація та оновлення доставки.">
 
 
 <details>
@@ -517,7 +517,7 @@ flowchart LR
 
 <a id="month-october"></a>
 
-<img src="assets/history/october.svg" width="460" alt="ЖОВТЕНЬ 2026: Інтеграція маркетплейсу. Кошик, продавці, доставка й OAuth, новий адмінпростір та виправлення.">
+<img src="../assets/history/october.svg" width="460" alt="ЖОВТЕНЬ 2026: Інтеграція маркетплейсу. Кошик, продавці, доставка й OAuth, новий адмінпростір та виправлення.">
 
 
 <details>
@@ -561,7 +561,7 @@ flowchart LR
 
 <a id="month-november"></a>
 
-<img src="assets/history/november.svg" width="460" alt="ЛИСТОПАД 2026: Покупець може скасувати замовлення. Зміна інтерфейсу та підключення до API.">
+<img src="../assets/history/november.svg" width="460" alt="ЛИСТОПАД 2026: Покупець може скасувати замовлення. Зміна інтерфейсу та підключення до API.">
 
 <details>
 <summary><strong>📅 Події за днями</strong></summary>
@@ -576,7 +576,7 @@ flowchart LR
 </tr>
 </table>
 
-[📖 Детальна історія](docs/history/project-history.md) · [📅 Журнал за днями](docs/history/daily-log.md) · [👥 Команда](docs/team/README.md)
+[📖 Детальна історія](../docs/history/project-history.md) · [📅 Журнал за днями](../docs/history/daily-log.md) · [👥 Команда](../docs/team/README.md)
 
 ---
 
@@ -592,7 +592,7 @@ flowchart LR
 | **23-24.10 · Міграція мов профілю**: deployment зупиняла відсутність міграції в allowlist. | Узгодження дозволеного переліку й тести міграцій. | [BE #84](https://github.com/tr3ba/treba-backend/pull/84) |
 | **27-28.10 · UserExternalLogins**: перевірка використовувала іншу назву таблиці. | Визначення й quoting імені з EF metadata. | [BE #91](https://github.com/tr3ba/treba-backend/pull/91) |
 
-[Повні розбори проблем і виправлень →](docs/incidents/README.md)
+[Повні розбори проблем і виправлень →](../docs/incidents/README.md)
 
 ---
 
@@ -600,15 +600,15 @@ flowchart LR
 
 ## 👥 Люди в історії проєкту
 
-TREBA розвивала команда з різними напрямами роботи: від інтерфейсу магазину й API до доставки в AWS. Коротко про учасників нижче; більше про їхній внесок є на [сторінці команди](docs/team/README.md).
+TREBA розвивала команда з різними напрямами роботи: від інтерфейсу магазину й API до доставки в AWS. Коротко про учасників нижче; більше про їхній внесок є на [сторінці команди](../docs/team/README.md).
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-<a href="docs/team/README.md#author-amonezeer"><img src="https://github.com/amonezeer.png?size=160" width="56" height="56" align="right" alt="amonezeer"></a>
+<a href="../docs/team/README.md#author-amonezeer"><img src="https://github.com/amonezeer.png?size=160" width="56" height="56" align="right" alt="amonezeer"></a>
 
-### [amonezeer](docs/team/README.md#author-amonezeer)
+### [amonezeer](../docs/team/README.md#author-amonezeer)
 
 API · адмінпростір · інтеграція<br>
 Приклад роботи: [перенесення адмінпростору](https://github.com/tr3ba/treba-backend/pull/96)
@@ -616,9 +616,9 @@ API · адмінпростір · інтеграція<br>
 </td>
 <td width="50%" valign="top">
 
-<a href="docs/team/README.md#author-f1eshka"><img src="https://github.com/F1eshka.png?size=160" width="56" height="56" align="right" alt="F1eshka"></a>
+<a href="../docs/team/README.md#author-f1eshka"><img src="https://github.com/F1eshka.png?size=160" width="56" height="56" align="right" alt="F1eshka"></a>
 
-### [F1eshka](docs/team/README.md#author-f1eshka)
+### [F1eshka](../docs/team/README.md#author-f1eshka)
 
 Інтерфейс магазину · UX<br>
 Приклад роботи: [сторінки каталогу](https://github.com/tr3ba/treba-frontend/pull/15)
@@ -628,9 +628,9 @@ API · адмінпростір · інтеграція<br>
 <tr>
 <td width="50%" valign="top">
 
-<a href="docs/team/README.md#author-thewhitemage13"><img src="https://github.com/thewhitemage13.png?size=160" width="56" height="56" align="right" alt="thewhitemage13"></a>
+<a href="../docs/team/README.md#author-thewhitemage13"><img src="https://github.com/thewhitemage13.png?size=160" width="56" height="56" align="right" alt="thewhitemage13"></a>
 
-### [thewhitemage13](docs/team/README.md#author-thewhitemage13)
+### [thewhitemage13](../docs/team/README.md#author-thewhitemage13)
 
 Каталог · кошик · відгуки<br>
 Приклад роботи: [API каталогу](https://github.com/tr3ba/treba-backend/pull/12)
@@ -638,9 +638,9 @@ API · адмінпростір · інтеграція<br>
 </td>
 <td width="50%" valign="top">
 
-<a href="docs/team/README.md#author-quixar"><img src="https://github.com/Quixar.png?size=160" width="56" height="56" align="right" alt="Quixar"></a>
+<a href="../docs/team/README.md#author-quixar"><img src="https://github.com/Quixar.png?size=160" width="56" height="56" align="right" alt="Quixar"></a>
 
-### [Quixar](docs/team/README.md#author-quixar)
+### [Quixar](../docs/team/README.md#author-quixar)
 
 Авторизація · замовлення · оплата<br>
 Приклад роботи: [авторизація](https://github.com/tr3ba/treba-backend/pull/31)
@@ -650,9 +650,9 @@ API · адмінпростір · інтеграція<br>
 <tr>
 <td width="50%" valign="top">
 
-<a href="docs/team/README.md#author-broadcast1storm"><img src="https://github.com/Broadcast1Storm.png?size=160" width="56" height="56" align="right" alt="Broadcast1Storm"></a>
+<a href="../docs/team/README.md#author-broadcast1storm"><img src="https://github.com/Broadcast1Storm.png?size=160" width="56" height="56" align="right" alt="Broadcast1Storm"></a>
 
-### [Broadcast1Storm](docs/team/README.md#author-broadcast1storm)
+### [Broadcast1Storm](../docs/team/README.md#author-broadcast1storm)
 
 Контейнери · CI/CD · AWS<br>
 Приклад роботи: [доставка через ECR](https://github.com/tr3ba/treba-backend/pull/6)
@@ -662,7 +662,7 @@ API · адмінпростір · інтеграція<br>
 
 ### 📖 Усі автори змін
 
-[Переглянути внесок команди →](docs/team/README.md)
+[Переглянути внесок команди →](../docs/team/README.md)
 
 </td>
 </tr>
@@ -722,4 +722,3 @@ refresh/logout та підтримку двофакторної автентиф
 </table>
 
 ---
-
