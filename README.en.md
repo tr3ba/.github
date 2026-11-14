@@ -106,11 +106,23 @@ The [history](docs/history/project-history.en.md) gives the sequence behind thes
 </tr>
 </table>
 
+### Verified DevOps state · 14 November 2026
+
+- **Private application services.** Caddy publishes ports 80/443; frontend and backend use Docker networks without publishing 3000/5000. Frontend access to EC2 instance metadata is blocked. Checks passed after a host reboot and a frontend release.
+- **Off-host backups.** Restic encrypts data before uploading to Google Drive. The TREBA database and local uploads run daily at 03:00; selected server configuration runs on Thursdays at 04:00, Europe/Kyiv. Retention keeps 7 daily and 4 weekly data periods, plus the latest 4 server configuration snapshots.
+- **Recovery and maintenance.** Database restoration passed in an isolated PostgreSQL instance. OS updates follow a successful server backup; automatic reboot is disabled. A complete EC2 rebuild has not yet been tested.
+
+[Backup and recovery guide, Ukrainian](https://github.com/tr3ba/treba-backend/blob/main/docs/backup-and-recovery.md) · [DevOps history, 11–14 November](docs/history/project-history.en.md#history-devops-november)
+
+These are recorded verification results from 11–14 November, not a continuous health report. Backup OAuth remains in Google's Testing mode with temporary authorization.
+
 ## System architecture
 
 ~~~mermaid
 flowchart LR
-    USER["Buyer or seller"] --> WEB["Next.js / React"]
+    USER["Buyer or seller"] -->|"HTTPS"| PROXY["Caddy"]
+    PROXY -->|":3000"| WEB["Next.js / React"]
+    PROXY -->|"/api/* :5000"| API["ASP.NET Core API"]
     WEB --> API["ASP.NET Core API"]
     API --> DATA["EF Core / Npgsql"]
     DATA --> DB[("PostgreSQL")]
@@ -126,11 +138,17 @@ Catalog pages read from the API. Authenticated cart and order flows use the back
 flowchart LR
     GH["GitHub Actions"] --> CHECK["Build and checks"]
     CHECK --> ECR["Docker image / ECR"]
-    ECR --> SSM["Systems Manager"]
+    ECR -.->|"After successful publishing"| SSM["Systems Manager"]
     SSM --> EC2["EC2 container"]
 ~~~
 
 Backend and frontend have separate workflows. Their deployment scripts use image tags derived from commits, check the new container, and keep the previous container available for rollback. Examples: [backend deployment](https://github.com/tr3ba/treba-backend/actions/runs/41083558386) and [frontend deployment](https://github.com/tr3ba/treba-frontend/actions/runs/41191308177).
+
+As of 14 November, **both deployment workflows are active**. They run after successful image publishing from `main` or by manual dispatch. Build and deployment results are checked separately. The latest [Deploy Backend](https://github.com/tr3ba/treba-backend/actions/runs/43580432609) and [Deploy Frontend](https://github.com/tr3ba/treba-frontend/actions/runs/43580590690) runs completed successfully.
+
+- Backend and frontend publishing use separate GitHub OIDC IAM roles scoped to their ECR repositories. Other workflows may still depend on the old AWS key.
+- [Backend #108](https://github.com/tr3ba/treba-backend/pull/108) and [frontend #63](https://github.com/tr3ba/treba-frontend/pull/63) move the updated actions to Node.js 24 and pin full upstream commit SHAs. Backend checks direct and transitive NuGet dependencies; frontend checks production npm dependencies. HIGH/CRITICAL advisories fail the respective CI checks.
+- PR checks passed: [Backend Build](https://github.com/tr3ba/treba-backend/actions/runs/43575140496) and [Frontend Checks](https://github.com/tr3ba/treba-frontend/actions/runs/43575146561). These runs do not establish that the new backend has been deployed to EC2.
 
 ## Development history
 

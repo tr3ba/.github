@@ -314,6 +314,16 @@ Frontend побудований на Next.js і React. Backend на ASP.NET Core
 </tr>
 </table>
 
+### Перевірений стан DevOps · 14 листопада 2026
+
+- **Приватні сервіси.** Caddy приймає HTTP/HTTPS на 80/443; frontend і backend доступні у Docker-мережах без публікації портів 3000/5000. Доступ frontend до метаданих EC2 заблоковано; перевірки після перезавантаження сервера й релізу frontend пройшли.
+- **Резервні копії поза EC2.** Restic шифрує дані перед передаванням на Google Drive: база TREBA й локальні фото щодня о 03:00, конфігурація сервера щочетверга о 04:00 за Києвом. Зберігаються 7 щоденних і 4 щотижневі періоди даних та останні 4 копії конфігурації.
+- **Відновлення й обслуговування.** Відновлення бази перевірено в ізольованому PostgreSQL. Оновлення ОС запускаються після успішного серверного бекапу; автоматичне перезавантаження вимкнене. Повне відтворення EC2 ще не перевірено.
+
+[Бекапи та відновлення](https://github.com/tr3ba/treba-backend/blob/main/docs/backup-and-recovery.md) · [Записи DevOps за 11–14 листопада](docs/history/project-history.md#history-devops-november)
+
+Це результати зафіксованих перевірок 11–14 листопада, а не безперервний моніторинг. Google OAuth для бекапів поки працює в режимі Testing із тимчасовою авторизацією.
+
 ---
 
 <a id="treba-architecture"></a>
@@ -328,7 +338,10 @@ flowchart LR
     API["ASP.NET Core<br/>.NET 10 API"]
     DB["PostgreSQL<br/>Amazon RDS"]
 
-    USER --> FRONT
+    PROXY["Caddy<br/>HTTP redirect / HTTPS"]
+    USER -->|"HTTPS"| PROXY
+    PROXY -->|":3000"| FRONT
+    PROXY -->|"/api/* :5000"| API
 
     FRONT -->|"Запити до API"| API
 
@@ -369,7 +382,7 @@ flowchart LR
     ACTIONS --> TEST
     TEST --> DOCKER
     DOCKER --> ECR
-    ECR --> SSM
+    ECR -.->|"Після успішної збірки"| SSM
     SSM --> EC2
 
     style DEV fill:#ffffff,color:#000000,stroke:#002AFF,stroke-width:2px
@@ -390,6 +403,12 @@ flowchart LR
 
 У репозиторіях налаштовані CI/CD workflows для збірки, тестування,
 створення Docker-образів, публікації в Amazon ECR та розгортання через AWS Systems Manager.
+
+Станом на 14 листопада **обидва workflows деплою активні**: вони запускаються після успішної публікації образу з `main` або вручну. Статуси збірки й деплою перевіряються окремо. Останні запуски [Deploy Backend](https://github.com/tr3ba/treba-backend/actions/runs/43580432609) та [Deploy Frontend](https://github.com/tr3ba/treba-frontend/actions/runs/43580590690) завершилися успішно.
+
+- Публікація backend і frontend використовує окремі IAM-ролі через GitHub OIDC з доступом до відповідного ECR-репозиторію. Це не означає, що всі інші workflows уже відмовилися від старого AWS-ключа.
+- У [backend #108](https://github.com/tr3ba/treba-backend/pull/108) та [frontend #63](https://github.com/tr3ba/treba-frontend/pull/63) оновлені actions переведено на Node.js 24 і закріплено повними SHA комітів. Backend перевіряє прямі й транзитивні NuGet-залежності, frontend — production-залежності npm; HIGH/CRITICAL блокують відповідні CI-перевірки.
+- Перевірки PR пройшли: [Backend Build](https://github.com/tr3ba/treba-backend/actions/runs/43575140496) та [Frontend Checks](https://github.com/tr3ba/treba-frontend/actions/runs/43575146561). Це не підтвердження розгортання нового backend на EC2.
 
 <details>
 <summary><strong>Деталі CI/CD: Backend та Frontend</strong></summary>

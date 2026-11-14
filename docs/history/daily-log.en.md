@@ -65,4 +65,13 @@ These are the days when a major part of the project changed. Each entry links to
 |---|---|
 | **5 November** | The buyer gained [order cancellation](https://github.com/tr3ba/treba-frontend/pull/56) from the order page. |
 
+### 11–14 November: DevOps
+
+Server work in this addition uses Europe/Kyiv dates and recorded verification results. [Full entry and remaining acceptance work](project-history.en.md#history-devops-november).
+
+- **11 November:** Caddy routing to private frontend/backend networks; application host port bindings removed.
+- **12 November:** encrypted Google Drive backups; an isolated PostgreSQL database restore passed.
+- **13 November:** OS update and reboot, metadata protection checks, controlled frontend release, rclone/gh updates. Archived old Docker versions before cleanup recovered 10.93 GiB. The backup-before-updates chain passed.
+- **14 November:** corrected backend image scan and migration rehearsal without production writes. CI changes [backend #108](https://github.com/tr3ba/treba-backend/pull/108), [frontend #63](https://github.com/tr3ba/treba-frontend/pull/63), and [backup guide #109](https://github.com/tr3ba/treba-backend/pull/109) were merged. ECR publishing remains separate from an EC2 release.
+
 [More context in the project history](project-history.en.md) · [Issues and fixes](../incidents/README.en.md)
